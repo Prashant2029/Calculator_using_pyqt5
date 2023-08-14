@@ -37,8 +37,8 @@ class MainWindow(QMainWindow):
     def numbers(self, number):
         text = self.label.text()
         if self.result_calculated:
-            self.reset_method()  # Reset the label
-            self.result_calculated = False  # Reset the flag
+            self.reset_method()  
+            self.result_calculated = False  
         text = self.label.text()
         if text != "0":
             self.label.setText(text + number)
